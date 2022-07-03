@@ -1,0 +1,47 @@
+@import'./../../../common/styles/variables';
+@import'./../../../common/styles/template';
+
+.month {
+  padding-top: $padding-top-title;
+  width: $width-half;
+  background-color: $calendar-background-light;
+  font-family: sans-serif;
+}
+
+.switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  color: $calendar-background-dark;
+  text-transform: uppercase;
+
+  &__title {
+    margin: 0 10px;
+    font-size: $font-size-title;
+  }
+
+  &__button {
+    padding: 0;
+    border: none;
+    background-color: $calendar-background-light;
+    color: $calendar-background-dark;
+    font-size: $font-size-title;
+  }
+}
+
+.table {
+  margin: 15px auto 0;
+
+  &__header {
+    @extend %column-align;
+    color: $current-day-color;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  &__cell {
+    @extend %column-align;
+    position: relative;
+  }
+}

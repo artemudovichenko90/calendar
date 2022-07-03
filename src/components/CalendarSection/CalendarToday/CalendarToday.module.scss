@@ -1,0 +1,21 @@
+@import'./../../../common/styles/variables';
+
+.today {
+  padding-top: $padding-top-title;
+  padding-bottom: 70px;
+  width: $width-half;
+  text-align: center;
+  background-color: #58cec4;
+  color: white;
+  font-family: sans-serif;
+
+  &__day-week {
+    text-transform: uppercase;
+    font-size: $font-size-title;
+  }
+
+  &__day-month {
+    font-size: 170px;
+    margin-top: 50px;
+  }
+}

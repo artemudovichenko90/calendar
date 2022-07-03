@@ -1,0 +1,11 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+@media screen and (min-width:568px) {
+  .calendar {
+    flex-direction: row;
+  }
+}
