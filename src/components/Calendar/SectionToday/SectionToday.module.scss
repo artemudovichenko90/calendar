@@ -1,8 +1,7 @@
 @import'./../../../common/styles/variables';
+@import'./../../../common/styles/template';
 
 .today {
-  padding-top: $padding-top-title;
-  padding-bottom: 70px;
   width: $width-half;
   text-align: center;
   background-color: #58cec4;
@@ -10,12 +9,15 @@
   font-family: sans-serif;
 
   &__day-week {
+    @extend %title;
+    margin-top: $margin-top-title;
     text-transform: uppercase;
-    font-size: $font-size-title;
   }
 
   &__day-month {
-    font-size: 170px;
-    margin-top: 50px;
+    font-size: 290px;
+    line-height: 201px;
+    margin-top: 120px;
+    margin-bottom: 175px;
   }
 }

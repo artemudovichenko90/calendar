@@ -1,0 +1,25 @@
+@import './../../../../common/styles/variables';
+@import './../../../../common/styles/template';
+
+.dark {
+  @extend %day;
+  color: #a8a7a7;
+}
+
+.light {
+  @extend %day;
+  color: #ebe0e0;
+}
+
+.today {
+  @extend %day;
+  color: $current-day-color;
+  border: 5px solid $current-day-color;
+  border-radius: 50%;
+}
+
+.dark:hover,
+.light:hover,
+.today:hover {
+  background-color: rgb(223, 210, 210);
+}

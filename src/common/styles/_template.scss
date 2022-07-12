@@ -1,5 +1,22 @@
-%column-align {
-  padding: 7px 10px;
-  text-align: center;
+@import './variables';
+
+
+%title {
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+}
+
+%day {
+  font-size: $font-size-cell;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%week {
+  display: grid;
+  grid-template-columns: repeat(7, 55px);
+  grid-auto-rows: 55px;
   font-weight: bold;
+  text-align: center;
 }

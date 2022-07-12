@@ -1,9 +1,9 @@
 import './App.css';
-import CalendarSection from './components/CalendarSection/index';
+import Calendar from './components/Calendar/index';
 
 function App() {
   return (
-   <CalendarSection/>
+   <Calendar/>
   );
 }
 
